@@ -1,0 +1,166 @@
+/* Estilos para dispositivos móviles (hasta 576px de ancho) */
+@media screen and (max-width: 576px) {
+   form {
+      max-width: 90%; /* Ancho máximo del formulario al 90% del contenedor */
+      margin: 0 auto; /* Centrar el formulario horizontalmente */
+      display: flex; /* Establecer el contenedor de formulario como flexbox */
+      flex-direction: column; /* Apilar los elementos en columna */
+   }
+}
+
+/* Estilos para tablets (de 577px a 992px de ancho) */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+   form {
+      max-width: 70%; /* Ancho máximo del formulario al 70% del contenedor */
+      margin: 0 auto; /* Centrar el formulario horizontalmente */
+      display: flex; /* Establecer el contenedor de formulario como flexbox */
+      flex-direction: column; /* Apilar los elementos en columna */
+   }
+
+   fieldset {
+      display: flex; /* Establecer el fieldset como flexbox */
+      flex-wrap: wrap; /* Permitir que los elementos se envuelvan en múltiples líneas */
+      justify-content: space-between; /* Distribuir los elementos uniformemente */
+   }
+
+   fieldset label,
+   fieldset input,
+   fieldset select {
+      flex: 1 1 48%; /* Ocupar el 48% del espacio disponible, con flex-grow y flex-shrink igual a 1 */
+   }
+
+   fieldset input[type="text"],
+   fieldset input[type="date"],
+   fieldset input[type="url"],
+   fieldset input[type="tel"],
+   fieldset input[type="email"] {
+      width: 100%; /* Ancho completo para los campos de entrada */
+   }
+}
+
+/* Estilos para PCs (más de 993px de ancho) */
+@media screen and (min-width: 993px) {
+   form {
+      max-width: 50%; /* Ancho máximo del formulario al 50% del contenedor */
+      margin: 0 auto; /* Centrar el formulario horizontalmente */
+      display: flex; /* Establecer el contenedor de formulario como flexbox */
+      flex-direction: column; /* Apilar los elementos en columna */
+   }
+
+   fieldset {
+      display: flex; /* Establecer el fieldset como flexbox */
+      flex-wrap: wrap; /* Permitir que los elementos se envuelvan en múltiples líneas */
+      justify-content: space-between; /* Distribuir los elementos uniformemente */
+   }
+
+   fieldset label,
+   fieldset input,
+   fieldset div,
+   fieldset select {
+      flex: 1 1 48%; /* Ocupar el 48% del espacio disponible, con flex-grow y flex-shrink igual a 1 */
+   }
+
+   fieldset input[type="text"],
+   fieldset input[type="date"],
+   fieldset input[type="url"],
+   fieldset input[type="tel"],
+   fieldset input[type="email"] {
+      width: 100%; /* Ancho completo para los campos de entrada */
+   }
+}
+
+/* Estilos generales del cuerpo de la página */
+body {
+   font-family: Arial, sans-serif; /* Familia de fuentes para todo el cuerpo del documento */
+}
+
+/* Estilos generales para el formulario */
+form {
+   padding: 20px; /* Relleno interior del formulario */
+   border: 1px solid #ccc; /* Borde del formulario */
+   border-radius: 8px; /* Radio de borde del formulario */
+   background-color: #f9f9f9; /* Color de fondo del formulario */
+}
+
+/* Estilos para los fieldsets dentro del formulario */
+fieldset {
+   margin-bottom: 15px; /* Margen inferior del fieldset */
+   border: 1px solid black; /* Borde del fieldset */
+   border-radius: 5px; /* Radio de borde del fieldset */
+}
+
+/* Estilos para las etiquetas de los campos del formulario */
+label {
+   display: block; /* Mostrar las etiquetas en bloque (una debajo de la otra) */
+   font-weight: bold; /* Peso de la fuente en negrita para las etiquetas */
+}
+
+/* Estilos para los campos de entrada de texto, fecha, URL, teléfono, correo y select */
+input[type="text"],
+input[type="date"],
+input[type="url"],
+input[type="tel"],
+input[type="email"],
+select {
+   width: 100%; /* Ancho completo del campo de entrada y select */
+   padding: 8px; /* Relleno interior del campo de entrada y select */
+   margin-bottom: 10px; /* Margen inferior del campo de entrada y select */
+   border: 1px solid #ccc; /* Borde del campo de entrada y select */
+   border-radius: 4px; /* Radio de borde del campo de entrada y select */
+   box-sizing: border-box; /* Incluir el relleno y el borde en el ancho total del campo */
+}
+
+/* Estilos para el botón de enviar deshabilitado */
+input[type="submit"]:disabled {
+   background-color: #9e9e9e; /* Color de fondo cuando el botón está deshabilitado */
+   color: white; /* Color del texto cuando el botón está deshabilitado */
+   cursor: default; /* Cambio del cursor cuando el botón está deshabilitado */
+}
+
+/* Estilos para los botones de enviar y reset */
+input[type="submit"],
+input[type="reset"] {
+   background-color: #4caf50; /* Color de fondo del botón enviar y reset */
+   color: white; /* Color del texto del botón enviar y reset */
+   padding: 10px 20px; /* Relleno interior del botón enviar y reset */
+   border: none; /* Sin borde en el botón enviar y reset */
+   border-radius: 4px; /* Radio de borde del botón enviar y reset */
+   cursor: pointer; /* Cambio del cursor al pasar sobre el botón enviar y reset */
+}
+
+/* Estilos para el botón enviar y reset al pasar sobre ellos */
+input[type="submit"]:not([disabled]):hover,
+input[type="reset"]:not([disabled]):hover {
+   background-color: #45a049; /* Color de fondo del botón enviar y reset al pasar sobre ellos */
+}
+
+/* Estilos para el mensaje de términos */
+#terminos {
+   color: red; /* Color del texto para el mensaje de términos */
+}
+
+/* Estilos para el icono de ayuda */
+.ayuda {
+   position: relative; /* Posición relativa para el icono de ayuda */
+}
+
+/* Estilos para el icono de ayuda después */
+.ayuda::after {
+   content: "?"; /* Contenido del icono de ayuda */
+   position: absolute; /* Posición absoluta para el icono de ayuda después */
+   top: 50%; /* Posición vertical centrada del icono de ayuda */
+   right: -25px; /* Posición a la derecha del elemento padre */
+   transform: translateY(-50%); /* Ajuste vertical del icono de ayuda */
+   width: 20px; /* Ancho del icono de ayuda */
+   height: 20px; /* Altura del icono de ayuda */
+   background-color: #ccc; /* Color de fondo del icono de ayuda */
+   border-radius: 50%; /* Radio de borde del icono de ayuda */
+   text-align: center; /* Alineación del texto dentro del icono de ayuda */
+   line-height: 20px; /* Altura de línea del texto dentro del icono de ayuda */
+   font-size: 14px; /* Tamaño de fuente del texto dentro del icono de ayuda */
+}
+
+/* Estilos para el contenedor de usuario registrado */
+#usuarioRegistrado {
+   text-align: center; /* Alineación centrada del contenido dentro de usuario registrado */
+}

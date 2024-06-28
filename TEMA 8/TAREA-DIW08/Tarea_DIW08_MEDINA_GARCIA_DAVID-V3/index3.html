@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+
+<body>
+    <form method="get">
+        <div id="infoGeneral">
+            <h2>Formulario de Registro</h2>
+
+            <!-- Información general -->
+            <fieldset>
+                <legend>Información general</legend>
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Nombre" autocomplete="given-name"
+                    autofocus>
+
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" required placeholder="Apellidos"
+                    autocomplete="family-name">
+
+                <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="fechaNacimiento" name="fechaNacimiento" required
+                    placeholder="Fecha de Nacimiento" autocomplete="bday">
+            </fieldset>
+
+            <!-- Información adicional -->
+            <fieldset>
+                <legend>Información adicional</legend>
+
+                <label for="url">Página web personal (Opcional):</label>
+                <input type="url" id="url" name="url"
+                    placeholder="Escribe la URL de tu página web personal (https://www.ejemplo.com)" autocomplete="url">
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required placeholder="Correo electrónico"
+                    autocomplete="email">
+
+                <label for="telefono">Teléfono (móvil):</label>
+                <input type="tel" id="telefono" name="telefono" required placeholder="Teléfono móvil"
+                    autocomplete="tel">
+            </fieldset>
+
+            <!-- Información de contacto -->
+            <fieldset>
+                <legend>Información de contacto</legend>
+                <label for="provincia">Provincia:</label>
+                <select id="provincia" name="provincia" required>
+                    <option value="" disabled selected>Selecciona una provincia</option>
+                </select>
+
+                <label for="ciudad">Ciudad:</label>
+                <select id="ciudad" name="ciudad" required>
+                    <option value="" disabled selected>Selecciona una ciudad</option>
+                </select>
+
+                <label for="otraCiudad" id="labelOtraCiudad">Otra Ciudad:</label>
+                <input type="text" id="otraCiudad" name="otraCiudad" disabled>
+
+                <label for="direccion">Dirección del domicilio:</label>
+                <input type="text" id="direccion" name="direccion" required
+                    placeholder="Tipo de vía, nombre de la calle, número y piso" autocomplete="street-address">
+
+
+            </fieldset>
+            <input type="checkbox" id="aceptoTerminos" name="aceptoTerminos">Acepto los términos y condiciones
+            <p id="terminos">*Debe aceptar los terminos y condiciones</p>
+
+            <div id="botonesGeneral">
+                <input id="enviarGeneral" type="submit" value="Enviar" disabled>
+                <input id="resetGeneral" type="reset" value="Limpiar formulario">
+            </div>
+        </div>
+
+        <!-- Información bancaria -->
+        <div id="infoBancaria" hidden>
+
+        </div>
+
+        <!-- Usuario Registrado -->
+        <div id="usuarioRegistrado" hidden>
+
+        </div>
+
+    </form>
+    <script src="js/script3.js"></script>
+</body>
+
+</html>

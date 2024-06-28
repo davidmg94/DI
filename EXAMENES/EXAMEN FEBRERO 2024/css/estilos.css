@@ -1,0 +1,89 @@
+body {
+   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.nav-bar {
+   background-color: black;
+   color: grey;
+   padding: 20px;
+   font-size: medium;
+   position: fixed;
+   top: 0;
+   text-align: left;
+   width: 100%;
+}
+.nav-bar span {
+   margin: 5px;
+   color: grey;
+}
+.nav-bar span:hover {
+   color: white;
+   font-size: large;
+}
+.container {
+   display: flex;
+   flex-direction: row;
+}
+main {
+   margin: 90px 50px 0 50px;
+}
+aside {
+   margin-top: 90px;
+   margin-right: 50px;
+}
+.principal-section {
+   margin-right: 20px;
+   width: 100%;
+   height: 100%;
+}
+.principal-section > img {
+   width: 100%;
+   height: 100%;
+}
+
+.secondary-section {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   height: 100%;
+}
+
+[name="almacen"] {
+   padding: 5px 5px 10px;
+   background-color: rgb(226, 222, 0);
+   width: 100%;
+}
+.info {
+   background-color: rgb(23, 224, 243);
+   padding: 5px 5px 10px;
+   width: 100%;
+}
+.preguntas {
+   background-color: rgb(7, 172, 70);
+   padding: 5px 5px 10px;
+   width: 100%;
+   color: white;
+}
+
+footer {
+   margin-top: 30px;
+   background-color: black;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   padding: 10px 0 10px;
+}
+footer span {
+   color: white;
+   font-size: large;
+}
+#redes img {
+   width: 35px;
+   height: 35px;
+}
+#redes img:hover {
+   transform: scale(1.1);
+}
+
+h2 ~ p {
+   font-size: medium;
+}

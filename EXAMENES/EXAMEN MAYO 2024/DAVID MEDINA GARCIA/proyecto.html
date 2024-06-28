@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Ejemplo de Diseño Responsivo</title>
+
+  <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+
+  <!-- <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet" /> -->
+
+</head>
+
+<body>
+  <div class="container">
+    <header class="verde">
+      <h1>Prueba Mayo - Diseño de Iterfaces Web</h1>
+      
+      <nav>
+        <div class="menu_item" onclick="location.reload()">INICIO</div>
+        <div class="menu_item" onclick="cambiarImagen();">NOSOTROS</div>
+        <div class="menu_item" onclick="formulario();">CONTACTO</div>
+        <canvas id="figuras" width="100" height="100"></canvas>
+      </nav>
+    </header>
+    <main>
+      <section class="main_text">
+        <div>
+          <h3>PROYECTO PRÁCTICO</h3>
+          <h1 class="verde">DISEÑO RESPONSIVO</h1>
+        </div>
+        <div>
+          <p>
+            Página desarrollada por @alumno para el Curso "Diseño
+            de Interfaces Web".
+          </p>
+          <p>
+            Establece dos breakpoints, a 576px y a 992px, en los que se
+            produce un cambio en el layout de la página.
+          </p>
+          <p>El proceso de
+            desarrollo ha sido llevado a cabo empezando desde el diseño para
+            pantallas pequeñas
+          </p>
+        </div>
+      </section>
+
+      <section class="images" id="images">
+        <img src="img/img1.jpg" /> <img src="img/img2.jpg" />
+        <img src="img/img3.jpg" /> <img src="img/img4.jpg" />
+        <img src="img/img5.jpg" /> <img src="img/img6.jpg" />
+        <img src="img/img7.jpg" /> <img class="hidden" src="img/img8.jpg" />
+        <img src="img/img9.jpg" />
+      </section>
+
+    </main>
+
+    <section class="novedades">
+      <h2 class="verde">NOVEDADES</h2>
+      <article>
+        <h4>15 de Septiembre</h3>
+          <h3 class="verde">Novedad 1</h3>
+          <p>
+            Accusantium consectetur, numquam ratione sed ut ipsa earum
+            consequatur sunt quae officiis facere tempora nobis pariatur
+            quibusdam non, cum harum. Expedita, doloribus!
+          </p>
+      </article>
+      <article>
+        <h4>15 de Octubre</h>
+          <h3 class="verde">Novedad 2</h3>
+          <p>
+            Accusantium consectetur, numquam ratione sed ut ipsa earum
+            consequatur sunt quae officiis facere tempora nobis pariatur
+            quibusdam non, cum harum. Expedita, doloribus!
+          </p>
+      </article>
+      <article>
+        <h4>15 de Noviembre</h4>
+        <h3 class="verde">Novedad 3</h3>
+        <p>
+          Accusantium consectetur, numquam ratione sed ut ipsa earum
+          consequatur sunt quae officiis facere tempora nobis pariatur
+          quibusdam non, cum harum. Expedita, doloribus!
+        </p>
+      </article>
+    </section>
+  </div>
+  <script src="js/figuras.js"></script>
+  <script src="js/funciones.js"></script>
+</body>
+
+</html>

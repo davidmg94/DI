@@ -1,0 +1,156 @@
+body {
+   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+   margin: 0;
+}
+
+h1 img {
+   width: 200px;
+   height: 150px;
+}
+
+header {
+   background-color: #004c6d;
+   padding-top: 1%;
+   text-align: center;
+}
+
+header nav ul {
+   display: flex;
+   justify-content: center;
+}
+
+nav {
+   background-color: #004c6d;
+   color: #ffffff;
+   font-size: 1.5em;
+   padding: 1px;
+   position: fixed;
+   width: 100%;
+   top: 0;
+}
+.idioma {
+   position: absolute;
+   right: 0;
+}
+
+.idioma img {
+   width: 35px;
+   height: 22px;
+}
+
+nav li a img:hover {
+   transform: scale(1.1);
+}
+
+nav ul {
+   padding: 0;
+   margin: 0;
+}
+
+nav li {
+   display: inline;
+   margin-right: 20px;
+}
+
+nav li a {
+   text-decoration: none;
+   color: #ffffff;
+   font-weight: bold;
+}
+
+nav li a:hover {
+   color: #ffd166;
+}
+
+main {
+   display: flex;
+   margin-bottom: 20px;
+}
+
+section {
+   width: 80%;
+   padding: 0;
+   margin: 0;
+   background-color: #ffd166;
+}
+
+section h2 {
+   font-size: 1.75em;
+   text-decoration: underline;
+   text-align: center;
+}
+
+.contenido {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.hotel,
+.apartamento,
+.vuelo,
+.tren {
+   width: 47%;
+   margin: 10px;
+   padding: 1px;
+   box-sizing: border-box;
+}
+
+.hotel img,
+.apartamento img,
+.vuelo img,
+.tren img {
+   width: 450px;
+   height: 300px;
+   object-fit: cover;
+}
+
+.info {
+   width: 100%;
+   height: auto;
+   font-size: 1.15em;
+}
+
+aside {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   background-color: #ffd166;
+}
+
+.anuncio {
+   width: 20%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.anuncio img {
+   width: 100%;
+   height: 350px;
+   margin-top: 15%;
+   margin-bottom: 15%;
+}
+
+footer {
+   font-size: 1em;
+   background-color: #004c6d;
+   color: #ffffff;
+   padding: 5px;
+   display: flex;
+   justify-content: space-between;
+}
+
+footer a img {
+   height: 40px;
+   width: 40px;
+   margin-left: 10px;
+   padding-right: 5px;
+}
+
+.redes {
+   text-align: center;
+}
+
+footer div a :hover {
+   transform: scale(1.1);
+}

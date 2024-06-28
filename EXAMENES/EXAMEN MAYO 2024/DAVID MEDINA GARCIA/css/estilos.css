@@ -1,0 +1,186 @@
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 576px) {
+}
+
+/* Estilos para tablets */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+   canvas {
+      display: none;
+   }
+   h1 {
+      width: 50%;
+   }
+   nav .menu_item {
+      display: inline-flex;
+      flex-direction: row;
+   }
+   main {
+      display: inline-flex;
+      flex-direction: row;
+   }
+   .images,
+   .main_text {
+      width: 50%;
+   }
+   .images {
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+   }
+   .images img:not(.hidden) {
+      flex-basis: 50%;
+   }
+
+   .novedades {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+   }
+
+   .form {
+      display: flex;
+      flex-direction: column;
+      padding-left: 15%;
+   }
+   .form {
+      display: flex;
+      flex-direction: column;
+      padding-left: 5%;
+      padding-right: 5%;
+      margin-top: 5%;
+      margin-bottom: 5%;
+   }
+   .form input,
+   .form select {
+      width: 100%;
+   }
+   label {
+      color: white;
+   }
+}
+
+@media screen and (min-width: 993px) {
+   canvas {
+      display: none;
+   }
+
+   nav .menu_item {
+      display: inline-flex;
+      flex-direction: row;
+   }
+   h1 {
+      width: 50%;
+   }
+   main {
+      display: inline-flex;
+      flex-direction: row-reverse;
+   }
+   .images,
+   .main_text {
+      width: 50%;
+   }
+   .images {
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+   }
+   .images img {
+      display: flex;
+      flex-basis: 33.33%;
+   }
+
+   .novedades {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+   }
+
+   .form {
+      display: flex;
+      flex-direction: column;
+      padding-left: 10%;
+      padding-right: 10%;
+      margin-top: 5%;
+      margin-bottom: 5%;
+   }
+   .form input,
+   .form select {
+      width: 100%;
+   }
+   label {
+      color: white;
+   }
+}
+
+* {
+   box-sizing: border-box;
+}
+
+/* Pequeños reseteos */
+h1,
+h3,
+h4,
+p {
+   margin: 0px;
+   padding: 0.5em;
+}
+body {
+   background-color: white;
+}
+/* Para cambir el color de leta de ciertos elementos */
+.verde {
+   color: #0c9b3b;
+}
+
+/* Contenedor general*/
+.container {
+   font-family: "Righteous", cursive;
+   margin: 20px auto;
+   width: 90%;
+}
+
+/* Parte del logo y menú */
+header {
+   align-items: center;
+   display: flex;
+   justify-content: space-between;
+}
+
+.menu_item {
+   padding: 0.5em;
+   display: none;
+   cursor: pointer;
+}
+
+/*Estilos parte principal*/
+main {
+   background-color: #666666;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+main section {
+   width: 100%;
+}
+
+section.main_text {
+   color: white;
+   font-weight: bolder;
+   padding: 0.5em;
+}
+
+section.images {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+section.images img {
+   height: 100px;
+   width: 25%;
+}
+
+.hidden {
+   display: none;
+}
